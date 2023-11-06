@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FontService } from '../_services/font.service';
+import { FontSize } from '../_services/FontSize';
 
 @Component({
   selector: 'app-navbar',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  fontSizeEnum = FontSize;
 
+  constructor(public fontService: FontService) {}
 }
