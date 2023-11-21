@@ -1,0 +1,14 @@
+<section class="bg-light py-5">
+    <div class="container px-5 my-5">
+        <div class="text-center mb-5">
+            <h1 class="fw-bolder">Cennik biletów</h1>
+            <p class="lead fw-normal text-muted mb-0">Bilety do nabycia w kasach Muzeum. Uprzejmie informujemy, że kasy
+                biletowe zamykane są na 30 min przed zamknięciem ekspozycji.</p>
+        </div>
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-6 col-xl-3 mb-5" *ngFor="let price of prices">
+                <price-tile [pricetileContent]="price"></price-tile>
+            </div>
+        </div>
+    </div>
+</section>

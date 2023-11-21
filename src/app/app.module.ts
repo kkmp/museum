@@ -12,6 +12,9 @@ import { FaqPageComponent } from './faq-page/faq-page.component';
 import { AboutMuseumComponent } from './about-museum/about-museum.component';
 import { AllExhibitionsComponent } from './all-exhibitions/all-exhibitions.component';
 import { ExhibitionTileComponent } from './all-exhibitions/exhibition-tile/exhibition-tile.component';
+import { PriceListComponent } from './price-list/price-list.component';
+import { PriceTileComponent } from './price-list/price-tile/price-tile.component';
+import { NgxBootstrapIconsModule } from 'ngx-bootstrap-icons';
 
 @NgModule({
   declarations: [
@@ -23,12 +26,15 @@ import { ExhibitionTileComponent } from './all-exhibitions/exhibition-tile/exhib
     FaqPageComponent,
     AboutMuseumComponent,
     AllExhibitionsComponent,
-    ExhibitionTileComponent
+    ExhibitionTileComponent,
+    PriceListComponent,
+    PriceTileComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgxBootstrapIconsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
