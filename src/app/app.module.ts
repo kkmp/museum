@@ -10,6 +10,8 @@ import { FooterComponent } from './footer/footer.component';
 import {ContactPageComponent} from "./contact-page/contact-page.component";
 import { FaqPageComponent } from './faq-page/faq-page.component';
 import { AboutMuseumComponent } from './about-museum/about-museum.component';
+import { AllExhibitionsComponent } from './all-exhibitions/all-exhibitions.component';
+import { ExhibitionTileComponent } from './all-exhibitions/exhibition-tile/exhibition-tile.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { AboutMuseumComponent } from './about-museum/about-museum.component';
     FooterComponent,
     ContactPageComponent,
     FaqPageComponent,
-    AboutMuseumComponent
+    AboutMuseumComponent,
+    AllExhibitionsComponent,
+    ExhibitionTileComponent
   ],
   imports: [
     BrowserModule,
