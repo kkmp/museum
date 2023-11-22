@@ -19,3 +19,7 @@
 .list-unstyled.mb-0 li i {
     margin-right: 5px;
 }
+
+.line-through {
+    text-decoration: line-through;
+}

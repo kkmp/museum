@@ -1,14 +1,28 @@
 <div class="card mb-5 mb-xl-0 card-adjust">
     <div class="card-body p-5">
         <div class="small text-uppercase fw-bold">
-            {{pricetileContent.name}}
+            {{priceTileContent.name}}
         </div>
         <div class="mb-3">
-            <span class="display-4 fw-bold">{{pricetileContent.price}} zł</span>
-            <span class="text-muted" *ngIf="pricetileContent.name !== 'Bilet rodzinny'">/ os.</span>
+            <div *ngIf="priceTileContent.discount !== ''; else elseBlock">
+                <div>
+                <span class="display-4 fw-bold text-success">{{priceTileContent.discount}} zł</span>
+                <span class="text-muted" *ngIf="priceTileContent.name !== 'Bilet rodzinny'">/ os.</span>
+            </div>
+            <div>
+                <span class="line-through text-muted">{{priceTileContent.price}} zł</span>
+                <span class="line-through text-muted" *ngIf="priceTileContent.name !== 'Bilet rodzinny'">/os.</span>
+            </div>
+            </div>
+            <ng-template #elseBlock>
+                <div>
+                    <span class="display-4 fw-bold">{{priceTileContent.price}} zł</span>
+                    <span class="text-muted" *ngIf="priceTileContent.name !== 'Bilet rodzinny'">/ os.</span>
+                </div>
+            </ng-template>
         </div>
-        <ul class="list-unstyled mb-0" *ngIf="pricetileContent.extras.length > 0">
-            <li class="mb-2" *ngFor="let extra of pricetileContent.extras">
+        <ul class="list-unstyled mb-0" *ngIf="priceTileContent.extras.length > 0">
+            <li class="mb-2" *ngFor="let extra of priceTileContent.extras">
                 <i class="bi bi-check text-primary"></i>
                 {{extra}}
             </li>

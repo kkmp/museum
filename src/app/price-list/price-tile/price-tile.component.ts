@@ -7,5 +7,5 @@ import { PriceTileContent } from 'src/app/_models/priceTileContent';
   styleUrls: ['./price-tile.component.css']
 })
 export class PriceTileComponent {
-  @Input() pricetileContent!: PriceTileContent;
+  @Input() priceTileContent!: PriceTileContent;
 }
