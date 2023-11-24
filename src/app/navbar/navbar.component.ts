@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FontService } from '../_services/font.service';
-import { FontSize } from '../_services/FontSize';
+import { FontSize } from '../_models/fontSize';
+import { ContrastService } from '../_services/contrast.service';
 
 @Component({
   selector: 'app-navbar',
@@ -10,5 +11,5 @@ import { FontSize } from '../_services/FontSize';
 export class NavbarComponent {
   fontSizeEnum = FontSize;
 
-  constructor(public fontService: FontService) {}
+  constructor(public fontService: FontService, public contrastService: ContrastService) {}
 }

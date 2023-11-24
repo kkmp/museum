@@ -13,9 +13,30 @@
  */
 * {
   font-size: var(--fontSize);
+  color: var(--contrastColor, '');
 }
 
 :root {
+  --bs-card-background: #fff;
+  --bs-card-title-color-title: ;
+  --bs-badge-color-badge: #fff;
+  --bs-navbar-color-navbar: rgba(255, 255, 255, 0.55);
+  --bs-navbar-hover-color-navbar: rgba(255, 255, 255, 0.75);
+  --navbar-brand-color: white;
+  --text-muted-text: #6c757d;
+  --bs-accordion-active-background: #e7f1ff;
+  --bs-accordion-active-color-active: #0c63e4;
+  --bs-accordion-background: #fff;
+  --bs-accordion-btn-color-btn: #212529;
+  --bs-primary-rgb2: 92, 184, 92;
+  --bs-btn-color-btn-contrast: #fff;
+  --bs-btn-background: #0d6efd;
+  --card-body-background: ;
+  --bs-btn-hover-background: #f8f9fa;
+  --bs-btn-hover-color-hover: black;
+  --bs-btn-hover-background-primary: #0a58ca;
+  --bs-btn-hover-color-primary: #fff;
+
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -2849,12 +2870,12 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #0d6efd;
-  --bs-btn-border-color: #0d6efd;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #0b5ed7;
-  --bs-btn-hover-border-color: #0a58ca;
+  --bs-btn-color: var(--bs-btn-color-btn-contrast);
+  --bs-btn-bg: var(--bs-btn-background);
+  --bs-btn-border-color: var(--bs-btn-background);
+  --bs-btn-hover-color: var(--bs-btn-hover-color-primary);
+  --bs-btn-hover-bg: var(--bs-btn-hover-background-primary);
+  --bs-btn-hover-border-color: var(--bs-btn-hover-background-primary);
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #0a58ca;
@@ -3087,10 +3108,10 @@ textarea.form-control-lg {
 }
 
 .btn-outline-light {
-  --bs-btn-color: #f8f9fa;
+  --bs-btn-color: var(--navbar-brand-color);
   --bs-btn-border-color: #f8f9fa;
-  --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #f8f9fa;
+  --bs-btn-hover-color: var(--bs-btn-hover-color-hover);
+  --bs-btn-hover-bg: var(--bs-btn-hover-background);
   --bs-btn-hover-border-color: #f8f9fa;
   --bs-btn-focus-shadow-rgb: 248, 249, 250;
   --bs-btn-active-color: #000;
@@ -3775,12 +3796,12 @@ textarea.form-control-lg {
   padding-bottom: var(--bs-navbar-brand-padding-y);
   margin-right: var(--bs-navbar-brand-margin-end);
   font-size: var(--bs-navbar-brand-font-size);
-  color: var(--bs-navbar-brand-color);
+  color: var(--navbar-brand-color);
   text-decoration: none;
   white-space: nowrap;
 }
 .navbar-brand:hover, .navbar-brand:focus {
-  color: var(--bs-navbar-brand-hover-color);
+  color: var(--navbar-brand-color);
 }
 
 .navbar-nav {
@@ -4143,8 +4164,8 @@ textarea.form-control-lg {
 }
 
 .navbar-dark {
-  --bs-navbar-color: rgba(255, 255, 255, 0.55);
-  --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
+  --bs-navbar-color: var(--bs-navbar-color-navbar);
+  --bs-navbar-hover-color: var(--bs-navbar-hover-color-navbar);
   --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
   --bs-navbar-active-color: #fff;
   --bs-navbar-brand-color: #fff;
@@ -4157,6 +4178,7 @@ textarea.form-control-lg {
   --bs-card-spacer-y: 1rem;
   --bs-card-spacer-x: 1rem;
   --bs-card-title-spacer-y: 0.5rem;
+  --bs-card-title-color: var(--bs-card-title-color-title);
   --bs-card-border-width: 1px;
   --bs-card-border-color: var(--bs-border-color-translucent);
   --bs-card-border-radius: 0.375rem;
@@ -4168,7 +4190,7 @@ textarea.form-control-lg {
   --bs-card-cap-color: ;
   --bs-card-height: ;
   --bs-card-color: ;
-  --bs-card-bg: #fff;
+  --bs-card-bg: var(--bs-card-background);
   --bs-card-img-overlay-padding: 1rem;
   --bs-card-group-margin: 0.75rem;
   position: relative;
@@ -4209,6 +4231,7 @@ textarea.form-control-lg {
   flex: 1 1 auto;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
   color: var(--bs-card-color);
+  background-color: var(--card-body-background);
 }
 
 .card-title {
@@ -4337,7 +4360,7 @@ textarea.form-control-lg {
 
 .accordion {
   --bs-accordion-color: #212529;
-  --bs-accordion-bg: #fff;
+  --bs-accordion-bg: var(--bs-accordion-background);
   --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
   --bs-accordion-border-color: var(--bs-border-color);
   --bs-accordion-border-width: 1px;
@@ -4345,7 +4368,7 @@ textarea.form-control-lg {
   --bs-accordion-inner-border-radius: calc(0.375rem - 1px);
   --bs-accordion-btn-padding-x: 1.25rem;
   --bs-accordion-btn-padding-y: 1rem;
-  --bs-accordion-btn-color: #212529;
+  --bs-accordion-btn-color: var(--bs-accordion-btn-color-btn);
   --bs-accordion-btn-bg: var(--bs-accordion-bg);
   --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   --bs-accordion-btn-icon-width: 1.25rem;
@@ -4356,8 +4379,8 @@ textarea.form-control-lg {
   --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
   --bs-accordion-body-padding-x: 1.25rem;
   --bs-accordion-body-padding-y: 1rem;
-  --bs-accordion-active-color: #0c63e4;
-  --bs-accordion-active-bg: #e7f1ff;
+  --bs-accordion-active-color: var(--bs-accordion-active-color-active);
+  --bs-accordion-active-bg: var(--bs-accordion-active-background);
 }
 
 .accordion-button {
@@ -4601,7 +4624,7 @@ textarea.form-control-lg {
   --bs-badge-padding-y: 0.35em;
   --bs-badge-font-size: 0.75em;
   --bs-badge-font-weight: 700;
-  --bs-badge-color: #fff;
+  --bs-badge-color: var(--bs-badge-color-badge);
   --bs-badge-border-radius: 0.375rem;
   display: inline-block;
   padding: var(--bs-badge-padding-y) var(--bs-badge-padding-x);
@@ -6742,10 +6765,10 @@ textarea.form-control-lg {
 }
 
 .link-light {
-  color: #f8f9fa !important;
+  color: var(--navbar-brand-color) !important;
 }
 .link-light:hover, .link-light:focus {
-  color: #f9fafb !important;
+  color: var(--navbar-brand-color) !important;
 }
 
 .link-dark {
@@ -8040,7 +8063,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--bs-primary-rgb2), var(--bs-text-opacity)) !important;
 }
 
 .text-secondary {
@@ -8095,7 +8118,7 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: var(--text-muted-text) !important;
 }
 
 .text-black-50 {
