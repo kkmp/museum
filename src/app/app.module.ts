@@ -15,6 +15,7 @@ import { ExhibitionTileComponent } from './all-exhibitions/exhibition-tile/exhib
 import { PriceListComponent } from './price-list/price-list.component';
 import { PriceTileComponent } from './price-list/price-tile/price-tile.component';
 import { NgxBootstrapIconsModule } from 'ngx-bootstrap-icons';
+import { ExhibitionComponent } from './exhibition/exhibition.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { NgxBootstrapIconsModule } from 'ngx-bootstrap-icons';
     AllExhibitionsComponent,
     ExhibitionTileComponent,
     PriceListComponent,
-    PriceTileComponent
+    PriceTileComponent,
+    ExhibitionComponent
   ],
   imports: [
     BrowserModule,

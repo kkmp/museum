@@ -6,6 +6,7 @@ import {FaqPageComponent} from "./faq-page/faq-page.component";
 import { AboutMuseumComponent } from './about-museum/about-museum.component';
 import { AllExhibitionsComponent } from './all-exhibitions/all-exhibitions.component';
 import { PriceListComponent } from './price-list/price-list.component';
+import {ExhibitionComponent} from "./exhibition/exhibition.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'faq', component: FaqPageComponent},
   { path: 'about', component: AboutMuseumComponent},
   { path: 'all-exhibitions', component: AllExhibitionsComponent},
-  { path: 'price-list', component: PriceListComponent}
+  { path: 'price-list', component: PriceListComponent},
+  { path: "test", component: ExhibitionComponent}
 ];
 
 @NgModule({
