@@ -1,5 +1,5 @@
-import { Injectable, OnInit } from '@angular/core';
-import { FontSize } from './FontSize';
+import { Injectable } from '@angular/core';
+import { FontSize } from '../_models/fontSize';
 
 @Injectable({
   providedIn: 'root'
