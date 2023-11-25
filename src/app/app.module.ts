@@ -16,6 +16,7 @@ import { PriceListComponent } from './price-list/price-list.component';
 import { PriceTileComponent } from './price-list/price-tile/price-tile.component';
 import { NgxBootstrapIconsModule } from 'ngx-bootstrap-icons';
 import { ExhibitionComponent } from './exhibition/exhibition.component';
+import { ExhibitionOneCenterComponent } from './exhibition-one-center/exhibition-one-center.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ExhibitionComponent } from './exhibition/exhibition.component';
     PriceListComponent,
     PriceTileComponent,
     ExhibitionComponent,
+    ExhibitionOneCenterComponent,
   ],
   imports: [
     BrowserModule,
