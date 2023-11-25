@@ -30,7 +30,7 @@ import { ExhibitionComponent } from './exhibition/exhibition.component';
     ExhibitionTileComponent,
     PriceListComponent,
     PriceTileComponent,
-    ExhibitionComponent
+    ExhibitionComponent,
   ],
   imports: [
     BrowserModule,

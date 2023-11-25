@@ -7,7 +7,7 @@ div.tytul {
 }
 div.obraz1 {
   position: absolute;
-  top: 180px;
+  top: 70px;
   right: 1660px;
   width: 200px;
   height: 320px;
@@ -61,21 +61,21 @@ div.obraz8 {
 }
 div.obraz9 {
   position: absolute;
-  top: 810px;
+  top: 720px;
   right: 1710px;
   width: 150px;
   height: 150px;
 }
 div.obraz10 {
   position: absolute;
-  top: 640px;
+  top: 670px;
   right: 200px;
   width: 900px;
   height: 400px;
 }
 div.obraz11 {
   position: absolute;
-  top: 510px;
+  top:430px;
   right: 1615px;
   width: 250px;
   height: 350px;
@@ -115,7 +115,7 @@ div.obraz11 {
 .text_obraz_6{
   position: center;
   font-family: 'Brush Script Std', cursive;
-  color: yellow;
+  color: #bb00ff;
   font-size: 24px;
 }.text_obraz_7{
    position: center;
