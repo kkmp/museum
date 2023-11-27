@@ -23,8 +23,8 @@ export class ExhibitionsDataService {
     },
     {
       year: 2021,
-      title: 'Wystawa twórczości Jana Matejki',
-      description: 'Przenieś się w świat wyjątkowej sztuki Jana Matejki na naszej niepowtarzalnej wystawie, która ukazuje geniusz i piękno jego dzieł, otwierając okno na epokę, historię i wyobraźnię wielkiego mistrza malarstwa.',
+      title: 'Wystawa twórczości malarskiej',
+      description: 'Przenieś się w świat wyjątkowej sztuki na naszej niepowtarzalnej wystawie, która ukazuje geniusz i piękno dzieł różnych twórców, otwierając okno na epokę, historię i wyobraźnię wielkich mistrzów malarstwa.',
       image: '../../assets/exhibition-3.jpg'
     },
     {

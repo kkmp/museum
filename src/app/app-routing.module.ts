@@ -16,8 +16,8 @@ const routes: Routes = [
   {path: 'about', component: AboutMuseumComponent},
   {path: 'all-exhibitions', component: AllExhibitionsComponent},
   {path: 'price-list', component: PriceListComponent},
-  {path: "all-exhibitions/2023", component: ExhibitionComponent},
-  {path: "all-exhibitions/2021", component: ExhibitionOneCenterComponent}
+  {path: "all-exhibitions/2021", component: ExhibitionComponent},
+  {path: "all-exhibitions/2023", component: ExhibitionOneCenterComponent}
 ];
 
 @NgModule({
