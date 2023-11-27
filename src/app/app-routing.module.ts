@@ -8,6 +8,7 @@ import {AllExhibitionsComponent} from './all-exhibitions/all-exhibitions.compone
 import {PriceListComponent} from './price-list/price-list.component';
 import {ExhibitionComponent} from "./exhibition/exhibition.component";
 import {ExhibitionOneCenterComponent} from "./exhibition-one-center/exhibition-one-center.component";
+import {MulitiediaComponent} from "./mulitiedia/mulitiedia.component";
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path: 'all-exhibitions', component: AllExhibitionsComponent},
   {path: 'price-list', component: PriceListComponent},
   {path: "test", component: ExhibitionComponent},
-  {path: "one", component: ExhibitionOneCenterComponent}
+  {path: "one", component: ExhibitionOneCenterComponent},
+  {path: "multi", component: MulitiediaComponent}
 ];
 
 @NgModule({
