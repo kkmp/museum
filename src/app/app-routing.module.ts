@@ -19,7 +19,7 @@ const routes: Routes = [
   {path: 'price-list', component: PriceListComponent},
   {path: "all-exhibitions/2021", component: ExhibitionComponent},
   {path: "all-exhibitions/2023", component: ExhibitionOneCenterComponent},
-  {path: "multi", component: MulitiediaComponent}
+  {path: "multimedia", component: MulitiediaComponent}
 ];
 
 @NgModule({
