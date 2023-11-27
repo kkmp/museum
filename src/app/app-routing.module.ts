@@ -17,8 +17,8 @@ const routes: Routes = [
   {path: 'about', component: AboutMuseumComponent},
   {path: 'all-exhibitions', component: AllExhibitionsComponent},
   {path: 'price-list', component: PriceListComponent},
-  {path: "test", component: ExhibitionComponent},
-  {path: "one", component: ExhibitionOneCenterComponent},
+  {path: "all-exhibitions/2021", component: ExhibitionComponent},
+  {path: "all-exhibitions/2023", component: ExhibitionOneCenterComponent},
   {path: "multi", component: MulitiediaComponent}
 ];
 
