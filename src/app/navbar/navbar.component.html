@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark position-navbar">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark position-navbar" aria-label="Nawigacja">
     <div class="container px-5">
         <a class="navbar-brand" routerLink="/">
             <i class="bi fs-4 bi-buildings"></i>
@@ -8,34 +8,34 @@
             data-bs-target="#navbarSupportedContent, #navbarFontSetupContent"
             aria-controls="navbarSupportedContent navbarFontSetupContent" aria-expanded="false"
             aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" aria-label="Menu główne">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link" routerLink="/about">Muzeum</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/about" aria-label="O muzeum">Muzeum</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" routerLink="/all-exhibitions" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">Wystawy</a>
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-label="Wystawy">Wystawy</a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
                         <li *ngFor="let exhibition of exhibitions">
                             <a class="dropdown-item" href='/all-exhibitions/{{exhibition.year}}'>{{exhibition.title}} ({{exhibition.year}})</a>
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item"><a class="nav-link" routerLink="/multimedia">Multimedia</a></li>
-                <li class="nav-item"><a class="nav-link" routerLink="/price-list">Cennik</a></li>
-                <li class="nav-item"><a class="nav-link" routerLink="/contact">Kontakt</a></li>
-                <li class="nav-item"><a class="nav-link" routerLink="/faq">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/multimedia" aria-label="Multimedia">Multimedia</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/price-list" aria-label="Cennik">Cennik</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/contact" aria-label="Kontakt">Kontakt</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/faq" aria-label="FAQ">FAQ</a></li>
             </ul>
         </div>
-        <div class="collapse navbar-collapse" id="navbarFontSetupContent">
+        <div class="collapse navbar-collapse" id="navbarFontSetupContent" aria-label="Ustawienia czcionki">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <div class="d-flex">
                     <li class="nav-item me-3">
-                        <button class="btn btn-outline-light" href="#!" (click)="contrastService.setContrast()">
+                        <button class="btn btn-outline-light" aria-label="Ustaw kontrast" (click)="contrastService.setContrast()">
                             <i class="fa fa-adjust" aria-hidden="true"></i>
                         </button>
                     </li>
                     <li class="nav-item">
-                        <div class="btn-group" role="group" aria-label="Basic example">
+                        <div class="btn-group" role="group" aria-label="Ustawienia rozmiaru czcionki">
                             <button class="btn btn-outline-light font-small"
                                 (click)="fontService.setGlobalFontSize(fontSizeEnum.Default)">A</button>
                             <button class="btn btn-outline-light font-medium"

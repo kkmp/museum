@@ -1,86 +1,82 @@
-<main class="flex-shrink-0">
-  <!-- Header-->
-  <header class="bg-dark py-5">
+<main class="flex-shrink-0" aria-label="Treść główna">
+  <header class="bg-dark py-5" aria-label="Nagłówek">
     <div class="container px-5">
       <div class="row gx-5 align-items-center justify-content-center">
         <div class="col-lg-8 col-xl-7 col-xxl-6">
           <div class="my-5 text-center text-xl-start">
-            <h1 class="display-5 fw-bolder text-white mb-2">Ostatnie wydarzenia w muzeum</h1>
-            <p class="lead fw-normal text-white-50 mb-4">Zapraszamy do zapoznania się z naszymi najnowszymi ekscytującymi wydarzeniami, 
+            <h1 class="display-5 fw-bolder text-white mb-2" aria-label="Tytuł">Ostatnie wydarzenia w muzeum</h1>
+            <p class="lead fw-normal text-white-50 mb-4" aria-label="Opis">Zapraszamy do zapoznania się z naszymi najnowszymi ekscytującymi wydarzeniami, 
               prezentującymi fascynujące historie, sztukę i kulturę poprzez inspirujące wystawy i wydarzenia.</p>
           </div>
         </div>
         <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
-          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" aria-label="Karuzela slajdów">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="Slide 1"></button>
+                      aria-current="true" aria-label="Slajd 1"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                      aria-label="Slide 2"></button>
+                      aria-label="Slajd 2"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                      aria-label="Slide 3"></button>
+                      aria-label="Slajd 3"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                      aria-label="Slide 4"></button>
+                      aria-label="Slajd 4"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
-                      aria-label="Slide 5"></button>
+                      aria-label="Slajd 5"></button>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="assets/exhibition-1.jpg" class="d-block w-100" alt="dzbany" height="400" width="600">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active" role="option" aria-label="Pierwszy slajd">
+                <img src="assets/exhibition-1.jpg" class="d-block w-100" alt="dzbany" aria-label="Zdjęcie dzbanka" height="400" width="600">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5 class="test">Nowa wystawa w muzeum</h5>
-                  <p class="test">Już teraz zobacz wystawę antycznych waz</p>
+                  <h2 class="test" aria-hidden="true">Nowa wystawa w muzeum</h2>
+                  <p class="test" aria-hidden="true">Już teraz zobacz wystawę antycznych waz</p>
                 </div>
               </div>
-              <div class="carousel-item">
-                <img src="assets/lublin.jpg" class="d-block w-100" alt="lublin" height="400" width="600">
+              <div class="carousel-item" role="option" aria-label="Drugi slajd">
+                <img src="assets/lublin.jpg" class="d-block w-100" alt="lublin" aria-label="Zdjęcie Lublina" height="400" width="600">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5 class="test">Akcja zwiedzania Lublina</h5>
-                  <p class="test">Zapisz się na zwiedzanie Lublina z przewodnikiem.</p>
+                  <h2 class="test" aria-hidden="true">Akcja zwiedzania Lublina</h2>
+                  <p class="test" aria-hidden="true">Zapisz się na zwiedzanie Lublina z przewodnikiem.</p>
                 </div>
               </div>
-              <div class="carousel-item">
-                <img src="assets/Zychowicz.jpg" class="d-block w-100" alt="zychowicz" height="400" width="600">
+              <div class="carousel-item" role="option" aria-label="Trzeci slajd">
+                <img src="assets/Zychowicz.jpg" class="d-block w-100" alt="zychowicz" aria-label="Zdjęcie Zychowicza" height="400" width="600">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5 class="test">Zapraszamy na spotkania z ciekawymi ludzimi</h5>
-                  <p class="test">W ramach naszych co miesięcznych spotkań zapraszamy na spotkanie z Piotrem Zychowiczem polskim historykiem</p>
+                  <h2 class="test" aria-hidden="true">Zapraszamy na spotkania z ciekawymi ludzimi</h2>
+                  <p class="test" aria-hidden="true">W ramach naszych co miesięcznych spotkań zapraszamy na spotkanie z Piotrem Zychowiczem polskim historykiem</p>
                 </div>
               </div>
-              <div class="carousel-item">
-                <img src="assets/obrazy/test7.jpg" class="d-block w-100" alt="beksiniski" height="400" width="600">
+              <div class="carousel-item" role="option" aria-label="Czwarty slajd">
+                <img src="assets/obrazy/test7.jpg" class="d-block w-100" alt="beksiniski" aria-label="Zdjęcie wystawy Beksińskiego" height="400" width="600">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5 class="test">Wystawa Specjalna</h5>
-                  <p class="test">Zobacz obrazy Beksińskiego</p>
+                  <h2 class="test" aria-hidden="true">Wystawa Specjalna</h2>
+                  <p class="test" aria-hidden="true">Zobacz obrazy Beksińskiego</p>
                 </div>
               </div>
-              <div class="carousel-item">
-                <img src="assets/majdanek.jpg" class="d-block w-100" alt="majdanek" height="400" width="600">
+              <div class="carousel-item" role="option" aria-label="Piąty slajd">
+                <img src="assets/majdanek.jpg" class="d-block w-100" alt="majdanek" aria-label="Zdjęcie Majdanku" height="400" width="600">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5 class="test">Zapoznanie z historią</h5>
-                  <p class="test">Zapraszamy najmłodszych na ciekawe warsztaty przyblizające historie miasta</p>
+                  <h2 class="test" aria-hidden="true">Zapoznanie z historią</h2>
+                  <p class="test" aria-hidden="true">Zapraszamy najmłodszych na ciekawe warsztaty przyblizające historie miasta</p>
                 </div>
               </div>
-              <!-- Dodaj kolejne elementy carousel-item tutaj -->
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
+                    data-bs-slide="prev" aria-label="Poprzedni slajd">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
+                    data-bs-slide="next" aria-label="Następny slajd">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-
         </div>
       </div>
     </div>
   </header>
   <div class="container-fluid">
     <div class="row">
-      <!-- Lewa sekcja (80% szerokości) -->
       <div class="col-8">
           <section class="px-2">
             <div class="container px-3 my-3">
@@ -94,10 +90,10 @@
               <div class="row gx-5">
                 <div class="col-lg-4 mb-5">
                   <div class="card h-100 shadow border-0">
-                    <img class="card-img-top" src="assets/exhibition-1.jpg" width="600" height="300" alt="..."/>
+                    <img class="card-img-top" src="assets/exhibition-1.jpg" width="600" height="300" alt="Zobacz więcej o nowej wystawie" aria-label="Zobacz więcej o nowej wystawie"/>
                     <div class="card-body p-4">
                       <div class="badge bg-primary bg-gradient rounded-pill mb-2">Nowość</div>
-                      <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Nowa wystawa w muzeum</h5></a>
+                      <a class="text-decoration-none link-dark stretched-link" aria-label="Zobacz więcej o nowej wystawie"><h2 class="card-title mb-3">Nowa wystawa w muzeum</h2></a>
                       <p class="card-text mb-0">Z wielką radością ogłaszamy otwarcie najnowszej wystawy w naszym muzeum, która zaprasza zwiedzających na fascynującą podróż przez nieodkryte zakątki sztuki i historii. "Odkrywanie Dzbanów" to wyjątkowa okazja do zanurzenia się w świat nieznanych dotąd dzieł i artefaktów, które po raz pierwszy prezentujemy szerokiej publiczności. Ta ekscytująca ekspozycja, łącząca w sobie elementy historii, sztuki i kultury, oferuje unikalne doświadczenie edukacyjne i estetyczne zarówno dla stałych bywalców muzeum, jak i dla nowych gości. Zapraszamy do doświadczania historii w zupełnie nowym świetle, odkrywając skarby, które dotąd pozostawały ukryte przed światem.</p>
                     </div>
                     <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
@@ -113,10 +109,10 @@
                 </div>
                 <div class="col-lg-4 mb-5">
                   <div class="card h-100 shadow border-0">
-                    <img class="card-img-top" src="assets/lublin.jpg" width="600" height="300" alt="lublin"/>
+                    <img class="card-img-top" src="assets/lublin.jpg" width="600" height="300" alt="Zdjęcie Lublina" aria-label="Zdjęcie Lublina"/>
                     <div class="card-body p-4">
                       <div class="badge bg-primary bg-gradient rounded-pill mb-2">Zwiedzanie</div>
-                      <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Akcja zwiedzania Lublina</h5></a>
+                      <a class="text-decoration-none link-dark stretched-link" aria-label="Zobacz więcej o akcji zwiedzania Lublina"><h2 class="card-title mb-3">Akcja zwiedzania Lublina</h2></a>
                       <p class="card-text mb-0">Muzeum w Lublinie zaprasza na ekscytujące zwiedzanie miasta, które odkrywa jego bogatą historię i kulturowe dziedzictwo. Podczas spaceru po Starym Mieście zobaczymy najważniejsze zabytki, w tym Bramę Krakowską i Kaplicę Trójcy Świętej. Przewodnicy opowiedzą o fascynujących historiach każdego miejsca, oferując unikalne doświadczenie zarówno dla mieszkańców, jak i turystów. Zapraszamy na niezapomnianą podróż przez Lublin! Zapraszamy do kontaktu.</p>
                     </div>
                     <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
@@ -132,11 +128,11 @@
                 </div>
                 <div class="col-lg-4 mb-5">
                   <div class="card h-100 shadow border-0">
-                    <img class="card-img-top" src="assets/obrazy/test6.jpg" alt="obrazy"/>
+                    <img class="card-img-top" src="assets/obrazy/test6.jpg" alt="Obrazy z wystawy" aria-label="Obrazy z wystawy"/>
                     <div class="card-body p-4">
                       <div class="badge bg-primary bg-gradient rounded-pill mb-2">Wystawa</div>
-                      <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">
-                        Muzeum Zaprasza na Wystawę Dzieł Beksinskiego</h5></a>
+                      <a class="text-decoration-none link-dark stretched-link" aria-label="Zobacz więcej o wystawie dzieł Beksińskiego"><h2 class="card-title mb-3">
+                        Muzeum Zaprasza na Wystawę Dzieł Beksinskiego</h2></a>
                       <p class="card-text mb-0">Z wielką przyjemnością zapraszamy do odwiedzenia naszej nowej wystawy poświęconej twórczości wybitnego artysty, Beksinskiego. Ta szczególna ekspozycja prezentuje szeroki wachlarz jego dzieł, od znanych ikon sztuki po mniej znane, lecz równie fascynujące prace. Każdy obraz i rzeźba to osobna opowieść, pełna emocji i głębi, która pozwala widzowi na chwilę zanurzyć się w wyjątkowym świecie artystycznym.</p>
                     </div>
                     <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
@@ -154,15 +150,11 @@
             </div>
           </section>
       </div>
-
-      <!-- Prawa sekcja (zawiera zdjęcie) -->
       <div class="col-4 pt-5">
         <section class="mt-sm-5 pt-5">
-          <img src="assets/Kalendarz2.jpg" width="800" height="1000" alt="Opis zdjęcia" class="img-fluid">
+          <img src="assets/Kalendarz2.jpg" width="800" height="1000" alt="Kalendarz" aria-label="Kalendarz" class="img-fluid">
         </section>
       </div>
     </div>
   </div>
-  <!-- Blog preview section-->
-
 </main>
